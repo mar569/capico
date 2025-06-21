@@ -10,6 +10,7 @@ export const CardPlatform: React.FC = () => {
         <div className="content-row">
             <div className="pic-col">
                 <picture>
+                    <source srcSet={securityImage} media="(min-width: 768px)" />
                     <img srcSet={securityImage} alt="" className="img-responsive" />
                 </picture>
             </div>
