@@ -22,7 +22,7 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({ onSignInClic
             </button>
 
             {isMobileMenuOpen && (
-                <div className="nav-col" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <div className="nav-col" style={{ display: 'flex', flexDirection: 'column', gap: '10px', flexGrow: 1 }}>
                     <ul className="mobile-nav-list" style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
                         <li><a href="/en/#features">features</a></li>
                         <li><a href="/en/prices/">prices</a></li>
@@ -33,7 +33,7 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({ onSignInClic
                     <button
                         onClick={onSignInClick}
                         className="reg-btn"
-                        style={{ display: "flex", alignItems: "center", gap: 5 }}
+                        style={{ display: "flex", alignItems: "center", gap: 5, marginTop: 'auto' }} // Добавлен marginTop: 'auto' для выравнивания кнопки внизу
                     >
                         <span>{user ? "Sign Out" : "Sign In"}</span>
                     </button>

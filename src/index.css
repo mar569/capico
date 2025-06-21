@@ -3138,18 +3138,24 @@ header .reg-btn img {
   z-index: 1000;
   box-shadow: 0 1px 10px rgb(65, 36, 98);
   display: none;
+  height: auto;
+  width: 200px;
+  flex-direction: column;
 }
 
 .mobile-nav.open {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .mobile-nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  flex-grow: 1;
+}
+
+.mobile-nav li {
+  margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
@@ -8009,7 +8015,7 @@ footer .nav-col > ul ul li a:hover {
 
 @media (max-width: 767px) {
   .index-top-section .top-content-box {
-    height: 70vh;
+    height: 100vh;
     justify-content: flex-end;
     padding-bottom: 4vh;
   }
