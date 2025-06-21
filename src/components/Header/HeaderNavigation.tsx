@@ -1,5 +1,5 @@
-
-import type { User } from 'firebase/auth';
+import React from "react";
+import type { User } from "firebase/auth";
 
 interface HeaderNavigationProps {
     onSignInClick: () => void;
@@ -8,8 +8,8 @@ interface HeaderNavigationProps {
 
 export const HeaderNavigation: React.FC<HeaderNavigationProps> = ({ onSignInClick, user }) => {
     return (
-        <div className="nav-col">
-            <ul className="main-nav" style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', gap: '20px' }}>
+        <div className="nav-col" style={{ gap: '10px' }}>
+            <ul className="main-nav" style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
                 <li><a href="/en/#features">features</a></li>
                 <li><a href="/en/prices/">prices</a></li>
                 <li><a href="/en/partners/">partners</a></li>
@@ -21,7 +21,7 @@ export const HeaderNavigation: React.FC<HeaderNavigationProps> = ({ onSignInClic
                 className="reg-btn"
                 style={{ display: "flex", alignItems: "center", gap: 5 }}
             >
-                <span>{user ? "Sign Out" : "Sign In"}</span>
+                <span>{user ? "sign out" : "sign in"}</span>
             </button>
         </div>
     );

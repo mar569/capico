@@ -24,7 +24,6 @@ export const LeftCols: React.FC = () => {
                         </li>
                         <li className="blue">
                             <img src={telegram} alt="Telegram Channel" aria-label="Telegram Channel" />
-                            <span>Channel</span>
                         </li>
                         <li >
                             <img src={vk} alt="VKontakte" aria-label="VKontakte" />

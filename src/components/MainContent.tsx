@@ -12,9 +12,10 @@ import Security from "./SecurutyPage/Security";
 import { Footer } from "./Footer/Footer";
 import Partners from "./ParthnersPage/Partners";
 import Capico from "./CapicoPage/Capico";
-import { FeaturesPending } from "./featureMarket/FeaturesPending";
+
 import Trade from "./TradePage/Trade";
 import AuthModal from './contexts/Modal/AuthModal';
+import { AutoAnimateWrapper } from './AutoAnimateWrapper';
 
 
 const MainContent: React.FC = () => {
@@ -39,21 +40,22 @@ const MainContent: React.FC = () => {
                 <Header onSignInClick={handleSignClick} user={user} />
                 <div className="main-page-holder" id="scrolled" data-scrollbar="true" tabIndex={-1}>
                     <div className="scroll-content">
-                        <div className="all-page-wrapper">
-                            <div className="all-page-holder">
-                                <CryptoInfo />
-                                <CryptoPlayer />
-                                <TotalTraid />
-                                <Features />
-                                <Carousel />
-                                <FeaturesPending />
-                                <Trade />
-                                <Security />
-                                <Partners />
-                                <Capico />
-                                <Footer />
+                        <AutoAnimateWrapper>
+                            <div className="all-page-wrapper">
+                                <div className="all-page-holder">
+                                    <CryptoInfo />
+                                    <CryptoPlayer />
+                                    <TotalTraid />
+                                    <Features />
+                                    <Carousel />
+                                    <Trade />
+                                    <Security />
+                                    <Partners />
+                                    <Capico />
+                                    <Footer />
+                                </div>
                             </div>
-                        </div>
+                        </AutoAnimateWrapper>
                     </div>
                 </div>
             </div>

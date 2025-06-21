@@ -26,7 +26,7 @@ export const NavCols: React.FC = () => {
                     <span>Platform</span>
                     <ul>
                         <li>
-                            <a href="/en/#features" className="js_scrollToLink" data-pagelink="true">Features</a>
+                            <a href="/en/#features" data-pagelink="true">Features</a>
                         </li>
                         <li>
                             <a href="/en/prices/">Prices</a>
